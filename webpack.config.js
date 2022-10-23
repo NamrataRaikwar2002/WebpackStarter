@@ -3,7 +3,7 @@ const path = require("path");
 const webpackConfig = {
     entry: path.resolve(__dirname, "src", "index.js"),
     output: {
-        filename: "[name].bundle.js",
+        filename: "[name].[contenthash].bundle.js",
         path: path.resolve(__dirname, "dist"),
         clean: true
     },
